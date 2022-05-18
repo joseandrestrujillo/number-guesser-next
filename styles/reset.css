@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+    background-color: rgb(33, 33, 84);
+    
+}
+li{
+    display: inline-block;
+    padding: .3em;
+    list-style: none;
+    font-size: 2em;
+    border-radius: 15px;
+    background-color: wheat;
+    margin-bottom: .5em;
+    min-width: 225px;
+    text-align: center;
+}
+ul{
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 450px;
+    margin-top: 1vw;
+}

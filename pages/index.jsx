@@ -1,14 +1,7 @@
-import Formulario from "../components/Formulario"
-import ShowNumber from "../components/ShowNumber"
-import AppProvider from "../components/AppProvider"
+import Form from "../components/Form"
 
 export default function Home() {
   return (
-    <>
-      <AppProvider>
-        <Formulario/>
-        <ShowNumber/>
-      </AppProvider>
-    </>
+    <Form/>
   )
 }
