@@ -4,6 +4,9 @@ This poject has been developed for a technical test. The user introduces a numbe
 
 # Build
 ```
+>>    npm install
+```
+```
 >>    npm run build 
 ```
 ```
