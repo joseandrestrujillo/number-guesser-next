@@ -2,7 +2,17 @@ import { useState } from "react";
 import React from "react";
 import AppContext from "../contexts/appContext";
 
+/**
+    Este componente provee del contexto a sus componentes hijos, el valor de este 
+    componente sera un array de dos elementos:
+    state: valor del estado actual, en este caso, el objeto con el numero y el proceso
+        para conseguirlo
+    setState: funcion para actualizar el valor de state en todo el contexto, sera
+    utilizado cuando el formulario reciba la información de la API
+ */
+
 const AppProvider = (props) => {
+    //El estado por defecto sera la salida del numero 1
     const [state, setState] = useState({
         number:1,
         "process":{
