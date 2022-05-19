@@ -11,6 +11,13 @@ const ShowNumber = () => {
         router.push("/guessnumber/steps")
     }
 
+    let tamNum = 
+        state.number < 9999 ? 10 :
+        state.number < 9999999 ? 6 : 4;
+    let marginNum = 
+        state.number < 9999 ? 0.01 :
+        state.number < 9999999 ? 0.2 : 0.6;
+
     return (
         <>
             <div>
@@ -35,9 +42,10 @@ const ShowNumber = () => {
                         padding: 0;
                     }
                     .number{
-                        font-size: 10em;
+                        font-size: ${tamNum}em;
                         margin: 0;
-                        margin-bottom: .05em;
+                        margin-bottom: ${marginNum}em;
+                        margin-top: ${marginNum}em;
                     }
                     button{
                         font-size: 3.5em;

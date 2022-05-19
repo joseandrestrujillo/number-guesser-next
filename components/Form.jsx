@@ -86,6 +86,7 @@ const Formulario = () => {
                         border-radius: 0 15px 15px 0;
                         border: none;
                         background-color: #ccc;
+                        cursor:pointer;
                     }
                 `}
             </style>
